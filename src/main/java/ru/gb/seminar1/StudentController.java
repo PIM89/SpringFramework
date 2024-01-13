@@ -8,12 +8,12 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-public class UserController {
+public class StudentController {
 
     StudentRepository studentRepository;
 
     @Autowired
-    public UserController(StudentRepository studentRepository) {
+    public StudentController(StudentRepository studentRepository) {
         this.studentRepository = studentRepository;
     }
 
