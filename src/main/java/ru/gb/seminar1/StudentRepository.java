@@ -69,7 +69,7 @@ public class StudentRepository {
                 .filter(it -> Objects.equals(it.getGroupName(), groupName))
                 .collect(Collectors.toList());
         if (!list.isEmpty()) {
-            return null;
+            return list;
         } else {
             throw new ResponseStatusException(HttpStatus.NOT_FOUND, "entity not found");
         }
